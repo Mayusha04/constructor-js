@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="one"></p>
+<p id="two"></p>
+<p id="three"></p>
+
+<script>
+function student(name,age,standard,rollno,marks) {
+    
+  this.firstName=name;
+  this.age=age;
+  this.class=standard;
+  this.rollno = rollno;
+  this.totalMarks=marks;
+}
+
+const vinay= new student("vinay",12,12,42,85);
+const haritha= new student("haritha",13,12,23,93);
+const chay= new student("chay",14,3,26,82);
+const siri= new student("siri",14,3,26,82);
+
+
+document.getElementById("one").innerHTML =
+"vinay total marks: " + vinay.totalMarks + "."; 
+document.getElementById("two").innerHTML="haritha roll no:"+haritha.rollno+".";
+document.getElementById("three").innerHTML="chay age:"+chay.age+".";
+</script>
+</body>
+</html>
